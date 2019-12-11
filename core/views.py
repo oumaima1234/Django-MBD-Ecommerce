@@ -17,6 +17,7 @@ class HomeView(ListView):
     model = Item
     context_object_name = 'Items'
     template_name = "home.html"
+    paginate_by = 1
 
 
 class ItemDetailView(DetailView):
