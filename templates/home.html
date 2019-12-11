@@ -1,268 +1,6 @@
+{% extends "base.html" %}
 
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
-
-    @media (max-width: 740px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-  </style>
-</head>
-
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <strong class="blue-text">MDB</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-              target="_blank">Free download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free
-              tutorials</a>
-          </li>
-        </ul>
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1"> 1 </span>
-              <i class="fas fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block"> Cart </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
-              target="_blank">
-              <i class="fab fa-github mr-2"></i>MDB GitHub
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </div>
-  </nav>
-  <!-- Navbar -->
-
-  <!--Carousel Wrapper-->
-  <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
-
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-    </ol>
-    <!--/.Indicators-->
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-      <!--First slide-->
-      <div class="carousel-item active">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%282%29.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
-              </h1>
-
-              <p>
-                <strong>Best & free guide of responsive web design</strong>
-              </p>
-
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/First slide-->
-
-      <!--Second slide-->
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%283%29.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
-              </h1>
-
-              <p>
-                <strong>Best & free guide of responsive web design</strong>
-              </p>
-
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Second slide-->
-
-      <!--Third slide-->
-      <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img%285%29.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-              <h1 class="mb-4">
-                <strong>Learn Bootstrap 4 with MDB</strong>
-              </h1>
-
-              <p>
-                <strong>Best & free guide of responsive web design</strong>
-              </p>
-
-              <p class="mb-4 d-none d-md-block">
-                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                  written versions
-                  available. Create your own, stunning website.</strong>
-              </p>
-
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-              </a>
-            </div>
-            <!-- Content -->
-
-          </div>
-          <!-- Mask & flexbox options-->
-
-        </div>
-      </div>
-      <!--/Third slide-->
-
-    </div>
-    <!--/.Slides-->
-
-    <!--Controls-->
-    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-    <!--/.Controls-->
-
-  </div>
-  <!--/.Carousel Wrapper-->
-
-  <!--Main layout-->
+{% block content %}
   <main>
     <div class="container">
 
@@ -315,56 +53,50 @@
       <!--Section: Products v.3-->
       <section class="text-center mb-4">
 
-        <!--Grid row-->
         <div class="row wow fadeIn">
 
-          <!--Grid column-->
-          {% for item in Items %}
+          {% for item in object_list %}
           <div class="col-lg-3 col-md-6 mb-4">
 
-            <!--Card-->
             <div class="card">
 
-              <!--Card image-->
               <div class="view overlay">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top"
-                  alt="">
-                <a>
+                {% comment %} <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" {% endcomment %}
+                <img src="data:image/jpeg;base64,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" class="card-img-top">
+                <a href="{{ item.get_absolute_url }}">
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <!--Card image-->
 
-              <!--Card content-->
               <div class="card-body text-center">
-                <!--Category & Title-->
                 <a href="" class="grey-text">
-                  <h5>{{item.get_category_display}}</h5>
+                  <h5>{{ item.get_category_display }}</h5>
                 </a>
                 <h5>
                   <strong>
-                    <a href="" class="dark-grey-text">{{item.title}}
-                      <span class="badge badge-pill {{item.get_label_display}}-color">NEW</span>
+                    <a href="{{ item.get_absolute_url }}" class="dark-grey-text">{{ item.title }}
+                      <span class="badge badge-pill {{ item.get_label_display }}-color">NEW</span>
                     </a>
                   </strong>
                 </h5>
 
                 <h4 class="font-weight-bold blue-text">
-                <strong>${{item.price}}</strong>
+                  <strong>$
+                  {% if item.discount_price %}
+                  {{ item.discount_price }}
+                  {% else %}
+                  {{ item.price }}
+                  {% endif %}
+                  </strong>
                 </h4>
 
               </div>
-              <!--Card content-->
 
             </div>
-            <!--Card-->
 
           </div>
           {% endfor %}
-          <!--Grid column-->
-
         </div>
-        <!--Grid row-->
 
       </section>
       <!--Section: Products v.3-->
@@ -412,88 +144,4 @@
     </div>
   </main>
   <!--Main layout-->
-
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank"
-        role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start
-        free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->
-
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  
-<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
-<!-- Initializations -->
-<script type="text/javascript">
-  // Animations initialization
-    // Animations initialization
-    new WOW().init();
-
-  </script>
-</body>
-
-</html>
+  {% endblock content %}
