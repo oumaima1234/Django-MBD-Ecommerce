@@ -10,10 +10,12 @@ PAYMENTS = (
 )
 class checkoutForm(forms.Form):
     street_address = forms.CharField(widget=forms.TextInput(attrs={
-        'placeholder': 'Avenue sainte eugenie'
+        'placeholder': 'Avenue sainte eugenie',
+        'class': 'form-control'
     }))
     appartement_address = forms.CharField(required=False, widget=forms.TextInput(attrs={
-        'placeholder': 'Appartment or suite'
+        'placeholder': 'Appartment or suite',
+        'class': 'form-control'
     }))
     country = CountryField(blank_label='(select country)').formfield(
         widget=CountrySelectWidget(attrs={
