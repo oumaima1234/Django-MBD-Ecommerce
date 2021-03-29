@@ -169,7 +169,7 @@ pycrypto==2.6.1
 pycurl==7.43.0.3
 pyflakes==2.1.1
 pyglet==1.3.2
-Pygments==2.4.2
+Pygments==2.7.4
 pygpu==0.7.6
 pylint==2.3.1
 pylint-django==2.0.13
